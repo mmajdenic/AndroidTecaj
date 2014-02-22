@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/activity_second_ispisano_prezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_second_ispisano_ime"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/activity_second_ispisano_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_second_ispisano_prezime"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/activity_second_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_second_ispisano_prezime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:text="@string/exit" />
+
+    <TextView
+        android:id="@+id/activity_second_ispisano_adresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_second_ispisano_prezime"
+        android:layout_below="@+id/activity_second_ispisano_prezime"
+        android:layout_marginTop="19dp"
+        android:text="TextView" />
+
+</RelativeLayout>
