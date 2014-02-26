@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AddButton</string>
+    <string name="action_settings">Settings</string>
+    <string name="tipka_submit">Dalje</string>
+    <string name="tipka_cancel">Cancel</string>
+    <string name="tipka_add">Dodaj</string>
+    <string name="tipka_exit">Exit</string>
+    <string name="activity_main_ime">Ime</string>
+    <string name="activitiy_main_prezime">Prezime</string>
+    <string name="activity_main_adresa">Adresa</string>
+    <string name="unesi_ime">Unesite ime</string>
+    <string name="unesi_prezime">Unesite prezime</string>
+    <string name="unesi_adresu">Unesite adresu</string>
+    <string name="uneseno_ime">Unešeno ime je:</string>
+    <string name="uneseno_prezime">Unešeno prezime je:</string>
+    <string name="unesena_adresa">Unešena adresa je:</string>
+    <string name="text_view">TextView</string>
+
+</resources>

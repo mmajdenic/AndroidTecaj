@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina_addbutton"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/activity_second_uneseno_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:text="@string/activity_main_ime" />
+
+    <EditText
+        android:id="@+id/activity_main_ime_edit_tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/unesi_ime"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/activity_main_prezime_edit_tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/activity_main_ime_edit_tekst"
+        android:ems="10"
+        android:hint="@string/unesi_prezime"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/activity_main_adresa_edit_tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/activity_main_ime_edit_tekst"
+        android:ems="10"
+        android:hint="@string/unesi_adresu"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_second_uneseno_ime"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/activitiy_main_prezime" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:text="@string/activity_main_adresa" />
+
+    <Button
+        android:id="@+id/activity_main_tipka3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_marginBottom="96dp"
+        android:text="@string/tipka_add" />
+
+    <Button
+        android:id="@+id/activity_main_tipka2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_adresa_edit_tekst"
+        android:layout_below="@+id/activity_main_adresa_edit_tekst"
+        android:layout_marginTop="24dp"
+        android:text="@string/tipka_cancel" />
+
+    <Button
+        android:id="@+id/activity_main_tipka"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_main_tipka2"
+        android:layout_alignBottom="@+id/activity_main_tipka2"
+        android:layout_alignRight="@+id/activity_main_adresa_edit_tekst"
+        android:text="@string/tipka_submit" />
+
+</RelativeLayout>
