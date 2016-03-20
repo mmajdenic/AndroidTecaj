@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Vodostaj Drave</string>
+    <string name="mjerna_postaja">Mjerna postaja</string>
+    <string-array name="mjerne_postaje">
+        <item >Drava - Botovo</item>
+        <item >Drava - Terezino Polje</item>
+        <item >Drava - Vrbovka</item>
+        <item >Drava - Moslavina</item>
+        <item >Drava - Donji Miholjac</item>
+        <item >Drava - Belišće</item>
+        <item >Drava - Osijek</item>
+    </string-array>
+    <string name="trenutni_vodostaj">Trenutni vodostaj:</string>
+    <string name="vodostaj_ocitanje">ocitavanje..</string>
+    <string name="cm">cm</string>
+    <string name="loading">loading..</string>
+	<string name="lista">Učitaj</string>
+	<string name="lista_txt">Za posljednja 24 sata:</string>
+
+</resources>

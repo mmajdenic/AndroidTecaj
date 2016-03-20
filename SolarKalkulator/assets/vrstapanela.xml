@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paneli>
+    <vrstapanela>
+        <item name="monokristalni">1</item>
+        <item name="polikristalni">0.95</item>
+        <item name="amorfni">0.849</item>
+    </vrstapanela>
+    <orijentacije>
+        <item name="jug">1</item>
+        <item name ="jugozapad">0.9392</item>
+        <item name = "zapad">0.7913</item>
+        <item name="jugoistok">0.9392</item>
+        <item name ="istok">0.7913</item>
+    </orijentacije>
+    <gradovi>
+        <item name="osijek" angles="16,17,18,19">1170</item>
+        <item name="zadar">1390</item>
+        <item name="split">1390</item>
+        <item name="Varaždin">1160</item>
+        <item name="Koprivnica">1170</item>
+        <item name="Zagreb">1140</item>
+        <item name="Bjelovar">1160</item>
+        <item name="Virovitica">1160</item>
+        <item name="Rijeka">1210</item>
+        <item name="Umag">1260</item>
+        <item name="Karlovac">1150</item>
+        <item name="Sisak">1160</item>
+        <item name="Požega">1150</item>
+        <item name="Slavonski brod">1150</item>
+        <item name="Vinkovci">1170</item>
+        <item name="Pula">1340</item>
+        <item name="Gospić">1150</item>
+        <item name="Knin">1310</item>
+        <item name="Šibenik">1430</item>
+        <item name="Korčula">1370</item>
+        <item name="Metković">1350</item>
+        <item name="Dubrovnik">1390</item>
+    </gradovi>
+</paneli>

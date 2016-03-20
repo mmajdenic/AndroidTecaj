@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gradovi>
+    <grad name="osijek" >
+        <lat>4545</lat>
+        <lnt>45645664</lnt>
+    </grad>
+    <grad name="vinkovci">
+        <lat>544646</lat>
+        <lnt>4214</lnt>
+    </grad>
+</gradovi>

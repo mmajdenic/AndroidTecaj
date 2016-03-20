@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonLeftUp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_leftup" />
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_up" />
+
+            <Button
+                android:id="@+id/buttonRightUp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_rightup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_left" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_stop" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonLeftDown"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:text="@string/dir_leftdown" />
+
+            <Button
+                android:id="@+id/buttonDown"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/dir_down" />
+
+            <Button
+                android:id="@+id/buttonRightDown"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:text="@string/dir_rightdown" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_untilStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/move_until_stop_option" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/buttonFirmware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_firmware_version" />
+
+        <Button
+            android:id="@+id/buttonPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_current_position" />
+
+        <Button
+            android:id="@+id/buttonSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_current_speed" />
+
+        <Button
+            android:id="@+id/buttonConnectionState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_connection_state" />
+
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+
+        <Button
+            android:id="@+id/buttonAutoMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_move" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/panSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/pan"
+                android:inputType="phone|number"
+                android:maxLength="3" />
+
+            <EditText
+                android:id="@+id/tiltSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/tilt"
+                android:inputType="phone|number"
+                android:maxLength="3" />
+
+            <Button
+                android:id="@+id/buttonSetSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioSlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/slow" />
+
+            <RadioButton
+                android:id="@+id/radioMid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mid" />
+
+            <RadioButton
+                android:id="@+id/radioFast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/fast" />
+
+            <RadioButton
+                android:id="@+id/radioVeryFast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/very_fast" />
+        </RadioGroup>
+    </LinearLayout>
+
+</ScrollView>

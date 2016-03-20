@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Smart Imaging Stand Controller</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Smart Imaging Stand Controller</string>
+    <string name="dir_leftup">LeftUp</string>
+    <string name="dir_up">Up</string>
+    <string name="dir_rightup">RightUp</string>
+    <string name="dir_left">Left</string>
+    <string name="dir_stop">Stop</string>
+    <string name="dir_right">Right</string>
+    <string name="dir_leftdown">LeftDown</string>
+    <string name="dir_down">Down</string>
+    <string name="dir_rightdown">RightDown</string>
+    <string name="reset_pan">Reset Pan</string>
+    <string name="reset_tilt">Reset Tilt</string>
+    <string name="reset">Reset</string>
+    <string name="move_until_stop_option">Move until stop</string>
+    <string name="get_firmware_version">Get Firmware Version</string>
+    <string name="get_current_position">Get Current Position</string>
+    <string name="get_current_speed">Get Current Speed</string>
+    <string name="get_connection_state">Get Connection State</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="auto_move">Auto Move</string>
+    <string name="pan">Pan</string>
+    <string name="tilt">Tilt</string>
+    <string name="set">Set Speed</string>
+    <string name="slow">Slow</string>
+    <string name="mid">Mid</string>
+    <string name="fast">Fast</string>
+    <string name="very_fast">Very Fast</string>
+    <string name="batteryLow">Battery Low</string>
+    <string name="batteryEmpty">Battery Empty</string>
+    <string name="mechanicalError">Mechanical Error</string>
+    <string name="menuButton">Menu button pressed</string>
+    <string name="operationButton">Operation button pressed</string>
+    <string name="currentSpeed">%1$s pan %2$d tilt %3$d</string>
+    <string name="currentPosition">pan %1$d tilt %2$d</string>
+    <string name="connectionState">Connection State: %1$d\n\nNONE = %2$d\nCONNECTING = %3$d\nCONNECTED = %4$d\nCONNECTION_LOST = %5$d</string>
+    <string name="onDeviceConnected">onDeviceConnected</string>
+    <string name="onDeviceDisconnected">onDeviceDisconnected</string>
+    <string name="robotUnavailable">Robot unavailable - Connection Failed</string>
+
+</resources>

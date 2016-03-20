@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fotonaponski Kalkulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="panel">Tip panela:</string>
+
+    <string-array name="vrsta_panela">
+        <item>Monokristalni silicij</item>
+        <item>Polikristalni silicij</item>
+        <item>Amorfni silicij</item>
+    </string-array>
+    <string-array name="orijentacija">
+        <item>0°  (Jug)</item>
+        <item>45° (Jugozapad)</item>
+        <item>90° (Zapad)</item>
+        <item>-45°(Jugoistok) </item>
+        <item>-90°(Istok) </item>
+    </string-array>
+
+    <string name="snaga">Snagu panela:</string>
+    <string name="nagib">Kut nagiba:</string>
+    <string name="Proizvodnja">Godišnja proizvodnja FN sustava:</string>
+    <string name="Snagap">kW</string>
+    <string name="Odabir">Odaberite:</string>
+    <string name="Izracun">Izračunaj</string>
+    <string name="orijentacija">Orijentaciju:</string>
+    <string name="title_activity_karta">Karta</string>
+    <string name="odabirGrada">Odaberite grad</string>
+
+</resources>

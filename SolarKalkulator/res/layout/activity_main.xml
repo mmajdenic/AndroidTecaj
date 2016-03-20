@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/activity_main_odaberite_regiju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="189dp"
+        android:text="@string/regija"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activity_main_odabrana_regija"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_main_odaberite_regiju"
+        android:layout_alignBottom="@+id/activity_main_odaberite_regiju"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="24dp"
+        android:layout_toRightOf="@+id/activity_main_tip_panela_txt"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activity_main_tip_panela_txt"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/activity_main_odaberite_regiju"
+        android:layout_below="@+id/activity_main_odaberite_regiju"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:text="@string/tip_panela"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/activity_main_tip_panela_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/activity_main_tip_panela_txt"
+        android:layout_toRightOf="@+id/activity_main_tip_panela_txt"
+        android:entries="@array/vrsta_panela"
+        android:gravity="center_vertical|right" />
+
+    <EditText
+        android:id="@+id/activity_main_snaga_panela_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_main_snaga_panela_txt"
+        android:layout_alignLeft="@+id/activity_main_tip_panela_spinner"
+        android:layout_alignRight="@+id/activity_main_odabrana_regija"
+        android:layout_marginRight="52dp"
+        android:ems="10"
+        android:hint="@string/nula" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/activity_main_kut_nagiba_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_snaga_panela_txt"
+        android:layout_below="@+id/activity_main_snaga_panela_txt"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/activity_main_snaga_panela_input"
+        android:ems="10"
+        android:text="@string/kut_nagiba"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/activity_main_kut_nagiba_unos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_main_kut_nagiba_txt"
+        android:layout_alignRight="@+id/activity_main_snaga_panela_input"
+        android:layout_toRightOf="@+id/activity_main_snaga_panela_txt"
+        android:ems="10"
+        android:hint="@string/trideset_pet" />
+
+    <TextView
+        android:id="@+id/activity_main_kut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_main_kut_nagiba_unos"
+        android:layout_alignLeft="@+id/activity_main_snaga_txt"
+        android:layout_alignRight="@+id/activity_main_snaga_txt"
+        android:text="@string/stupnjevi"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/activity_main_snaga_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_kut_nagiba_txt"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/activity_main_kut_nagiba_unos"
+        android:text="@string/snaga"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/activity_main_izracun_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/izracunaj" />
+
+    <TextView
+        android:id="@+id/activity_main_snaga_panela_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_tip_panela_spinner"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/activity_main_snaga_panela_input"
+        android:ems="10"
+        android:text="@string/snaga_panela"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activity_main_orijentacija_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_kut_nagiba_txt"
+        android:layout_below="@+id/activity_main_kut_nagiba_txt"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:text="@string/orijentacija_krova"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/activity_main_orijentacija_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_odabrana_regija"
+        android:layout_alignTop="@+id/activity_main_orijentacija_txt"
+        android:entries="@array/orijentacija"
+        android:gravity="center_vertical|right" />
+
+    <TextView
+        android:id="@+id/activity_main_izracun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/activity_main_odabrana_regija"
+        android:layout_alignTop="@+id/activity_main_izracun_btn"
+        android:hint="@string/nula"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/activity_main_izracun_proizvedene_energije_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_izracun_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/activity_main_orijentacija_spinner"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:text="@string/proizvodnja"
+        android:textSize="18sp" />
+
+</RelativeLayout>

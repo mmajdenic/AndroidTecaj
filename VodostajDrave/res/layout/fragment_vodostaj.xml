@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/activity_main_mjernapostaja_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/mjerna_postaja"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/activity_main_mjernapostaja_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_main_mjernapostaja_txt"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="45dp"
+        android:entries="@array/mjerne_postaje" />
+
+    <TextView
+        android:id="@+id/activity_main_vodostaj_ocitanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_trenutni_vodostaj_txt"
+        android:layout_alignTop="@+id/activity_main_trenutni_vodostaj_txt"
+        android:layout_marginTop="48dp"
+        android:hint="@string/vodostaj_ocitanje"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/activity_main_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_main_vodostaj_ocitanje"
+        android:layout_alignRight="@+id/activity_main_trenutni_vodostaj_txt"
+        android:text="@string/cm"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/activity_main_trenutni_vodostaj_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_mjernapostaja_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/trenutni_vodostaj"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/activity_main_vodostaj_lista_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="@string/lista" />
+
+    <TextView
+        android:id="@+id/activity_main_vodostaj_lista_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_vodostaj_lista_btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lista_txt" />
+
+</RelativeLayout>
