@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/activity_main_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/ime" />
+
+    <EditText
+        android:id="@+id/activity_main_unesi_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_ime"
+        android:layout_below="@+id/activity_main_ime"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/activity_main_prezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_main_unesi_ime"
+        android:layout_marginTop="18dp"
+        android:text="@string/prezime" />
+
+    <EditText
+        android:id="@+id/activity_main_unesi_prezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_prezime"
+        android:layout_below="@+id/activity_main_prezime"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/activity_main_spol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_unesi_prezime"
+        android:layout_below="@+id/activity_main_unesi_prezime"
+        android:layout_marginTop="27dp"
+        android:text="@string/spol" />
+
+    <RadioGroup
+        android:id="@+id/activity_main_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_spol"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_main_spol"
+        android:layout_marginRight="88dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/activity_main_radiobtn_musko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/muško" />
+
+        <RadioButton
+            android:id="@+id/activity_main_radiobtn_zensko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="@string/žensko" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activity_main_telbroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_radiogroup"
+        android:layout_below="@+id/activity_main_radiogroup"
+        android:layout_marginTop="16dp"
+        android:text="@string/telbroj" />
+
+    <EditText
+        android:id="@+id/activity_main_unesi_telbroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_telbroj"
+        android:layout_below="@+id/activity_main_telbroj"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/activity_main_dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_unesi_telbroj"
+        android:layout_below="@+id/activity_main_unesi_telbroj"
+        android:layout_marginTop="39dp"
+        android:text="@string/dodaj" />
+
+    <Button
+        android:id="@+id/activity_main_pregled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_main_dodaj"
+        android:layout_alignBottom="@+id/activity_main_dodaj"
+        android:layout_alignRight="@+id/activity_main_unesi_telbroj"
+        android:text="@string/pregled" />
+
+</RelativeLayout>

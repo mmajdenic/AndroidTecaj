@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">zadatak2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ime">ime</string>
+    <string name="prezime">prezime</string>
+    <string name="spol">spol</string>
+    <string name="muško">muško</string>
+    <string name="žensko">žensko</string>
+    <string name="telbroj">tel. broj</string>
+    <string name="dodaj">dodaj</string>
+    <string name="pregled">pregled</string>
+
+</resources>
