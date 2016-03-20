@@ -17,5 +17,6 @@
     <string name="uneseno_prezime">Unešeno prezime je:</string>
     <string name="unesena_adresa">Unešena adresa je:</string>
     <string name="text_view">TextView</string>
+    <string name="clear">C</string>
 
 </resources>

@@ -4,8 +4,8 @@ import android.app.Activity;
 
 public abstract class BaseActivity extends Activity {
 
-	public abstract void initUi();
+	protected abstract void initUi();
 
-	public abstract void initListeners();
+	protected abstract void initListeners();
 
 }

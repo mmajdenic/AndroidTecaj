@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView2"
+        android:layout_alignRight="@+id/item_activity_second_prezime"
         android:layout_marginTop="26dp"
         android:text="@string/activity_main_ime" />
 
@@ -22,8 +22,8 @@
         android:id="@+id/activity_main_ime_edit_tekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
+        android:layout_above="@+id/item_activity_second_prezime"
+        android:layout_toRightOf="@+id/item_activity_second_prezime"
         android:ems="10"
         android:hint="@string/unesi_ime"
         android:inputType="text"
@@ -37,7 +37,7 @@
         android:id="@+id/activity_main_prezime_edit_tekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignBottom="@+id/item_activity_second_prezime"
         android:layout_alignLeft="@+id/activity_main_ime_edit_tekst"
         android:ems="10"
         android:hint="@string/unesi_prezime"
@@ -49,7 +49,7 @@
         android:id="@+id/activity_main_adresa_edit_tekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignBottom="@+id/item_activity_second_adresa"
         android:layout_alignLeft="@+id/activity_main_ime_edit_tekst"
         android:ems="10"
         android:hint="@string/unesi_adresu"
@@ -58,7 +58,7 @@
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/item_activity_second_prezime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -68,22 +68,13 @@
         android:text="@string/activitiy_main_prezime" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/item_activity_second_adresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/item_activity_second_prezime"
+        android:layout_below="@+id/item_activity_second_prezime"
         android:layout_marginTop="18dp"
         android:text="@string/activity_main_adresa" />
-
-    <Button
-        android:id="@+id/activity_main_tipka3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_marginBottom="96dp"
-        android:text="@string/tipka_add" />
 
     <Button
         android:id="@+id/activity_main_tipka2"
@@ -104,5 +95,23 @@
         android:layout_alignBottom="@+id/activity_main_tipka2"
         android:layout_alignRight="@+id/activity_main_adresa_edit_tekst"
         android:text="@string/tipka_submit" />
+
+    <Button
+        android:id="@+id/activity_main_tipka3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/item_activity_second_adresa"
+        android:layout_below="@+id/activity_main_tipka2"
+        android:layout_marginTop="81dp"
+        android:text="@string/tipka_add" />
+
+    <Button
+        android:id="@+id/activity_main_tipka_clear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_tipka3"
+        android:layout_below="@+id/activity_main_tipka3"
+        android:text="@string/clear" />
 
 </RelativeLayout>

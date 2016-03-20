@@ -18,16 +18,15 @@ import android.widget.Toast;
 public class MainActivity extends BaseActivity {
 
 	private ArrayList<UserModel> mUsers = new ArrayList<UserModel>();
-	
+
 	private EditText mInputIme;
 	private EditText mInputPrezime;
 	private EditText mInputAdresa;
 	private Button mSubmitBtn;
 	private Button mCancelBtn;
 	private Button mAddBtn;
+	private Button mClear;
 
-	
-	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,6 +45,7 @@ public class MainActivity extends BaseActivity {
 		mSubmitBtn = (Button) findViewById(R.id.activity_main_tipka);
 		mCancelBtn = (Button) findViewById(R.id.activity_main_tipka2);
 		mAddBtn = (Button) findViewById(R.id.activity_main_tipka3);
+		mClear = (Button) findViewById(R.id.activity_main_tipka_clear);
 
 	}
 
@@ -54,6 +54,7 @@ public class MainActivity extends BaseActivity {
 		mSubmitBtn.setOnClickListener(mClickListener);
 		mCancelBtn.setOnClickListener(mClickListener);
 		mAddBtn.setOnClickListener(mClickListener);
+		mClear.setOnClickListener(mClickListener);
 
 	}
 
@@ -82,35 +83,43 @@ public class MainActivity extends BaseActivity {
 				String Adresa = mInputAdresa.getText().toString();
 				UserModel user = createUser(Ime, Prezime, Adresa);
 				addUserToUsersList(user);
-				Toast.makeText(MainActivity.this, "User je dodan, trenutna velièina je:" + mUsers.size(), Toast.LENGTH_SHORT).show();
-				
+				Toast.makeText(MainActivity.this,
+						"User je dodan, trenutna velièina je:" + mUsers.size(),
+						Toast.LENGTH_SHORT).show();
+
+				break;
+
+			case R.id.activity_main_tipka_clear:
+
+				mUsers.clear();
+
 				break;
 			}
 		}
-
 	};
 
-	private UserModel createUser (String ime, String prezime, String adresa) {
+	private UserModel createUser(String ime, String prezime, String adresa) {
 		UserModel user = new UserModel();
 		user.setIme(ime);
 		user.setPrezime(prezime);
 		user.setAdresa(adresa);
 		return user;
 	}
-	
+
 	private void addUserToUsersList(UserModel user) {
 		mUsers.add(user);
 	}
-	
+
 	private void startSecondActivity(String ime, String prezime, String adresa) {
 		Intent namjera = new Intent(this, SecondActivity.class);
 		UserModel model = new UserModel();
 		model.setIme(ime);
 		model.setPrezime(prezime);
 		model.setAdresa(adresa);
-		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_USER, model);
+		namjera.putParcelableArrayListExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_USER,
+				mUsers);
 		startActivity(namjera);
 
-		//finish();
+		// finish();
 	}
 }

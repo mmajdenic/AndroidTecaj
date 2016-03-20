@@ -2,75 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pozadina_addbutton"
     android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/activity_second_ispisano_prezime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/activity_second_uneseno_prezime"
-        android:layout_alignBottom="@+id/activity_second_uneseno_prezime"
-        android:layout_marginLeft="14dp"
-        android:layout_toRightOf="@+id/activity_second_uneseno_prezime"
-        android:text="@string/text_view"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/activity_second_ispisana_adresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/activity_second_unesena_adresa"
-        android:layout_alignBottom="@+id/activity_second_unesena_adresa"
-        android:layout_alignLeft="@+id/activity_second_ispisano_prezime"
-        android:text="@string/text_view"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/activity_second_ispisano_ime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/activity_second_uneseno_prezime"
-        android:layout_alignLeft="@+id/activity_second_ispisano_prezime"
-        android:text="@string/text_view"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/activity_second_uneseno_prezime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/activity_second_uneseno_ime"
-        android:layout_below="@+id/activity_second_uneseno_ime"
-        android:layout_marginTop="18dp"
-        android:text="@string/uneseno_prezime" />
-
-    <TextView
-        android:id="@+id/activity_second_unesena_adresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/activity_second_uneseno_prezime"
-        android:layout_marginTop="18dp"
-        android:layout_toLeftOf="@+id/activity_second_ispisano_prezime"
-        android:text="@string/unesena_adresa" />
 
     <Button
         android:id="@+id/activity_second_exit_btn"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/activity_second_unesena_adresa"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="107dp"
+        android:layout_alignParentRight="true"
         android:text="@string/tipka_exit" />
 
-    <TextView
-        android:id="@+id/activity_second_uneseno_ime"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/activity_second_listview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="42dp"
-        android:text="@string/uneseno_ime" />
+        android:layout_toLeftOf="@+id/activity_second_exit_btn" >
+
+    </ListView>
 
 </RelativeLayout>
